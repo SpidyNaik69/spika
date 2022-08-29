@@ -55,11 +55,8 @@ def stats(update, context):
     sendMessage(stats, context.bot, update.message)
 
 def start(update, context):
-    buttons = ButtonMaker()
-    buttons.buildbutton("Report Group", "https://t.me/Mltb_chat_unofficial")
-    buttons.buildbutton("Repo", "https://github.com/Dawn-India/Z-Mirror")
-    buttons.buildbutton("Mirror Group", "https://t.me/z_mirror")
-    buttons.buildbutton("Owner", "https://t.me/z_mirror")
+    buttons.buildbutton("Owner", "https://t.me/Mr_Spidy")
+    buttons.buildbutton("channel", "https://t.me/Yourdemandzone")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -68,7 +65,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
-        sendMarkup('Sorry, You cannot use me', context.bot, update.message, reply_markup)
+        sendMarkup('Sorry, You are not a authorized user', context.bot, update.message, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting...", context.bot, update.message)
