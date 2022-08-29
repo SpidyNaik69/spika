@@ -84,7 +84,7 @@ class TgUploader:
             leechchat = LEECH_DUMP
         else: leechchat = self.__listener.message.chat.id
         if CUSTOM_FILENAME is not None:
-            cap_mono = f"{CUSTOM_FILENAME} <b>{file_}</b>"
+            cap_mono = f"<b>{CUSTOM_FILENAME} {file_}</b>"
             file_ = f"{CUSTOM_FILENAME} {file_}"
             new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
