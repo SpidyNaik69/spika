@@ -161,7 +161,7 @@ T: {disk_t} | F: {disk_f}
 Working For: {currentTime}
 T-DL: {recv} | T-UL: {sent}
 
-Made with ❤️ by Dawn
+Made with ❤️ by Mr.Spidy
 """
 
 #---Thanks for deleting my name ❤️ Appreciate it---#
