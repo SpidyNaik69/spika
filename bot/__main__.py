@@ -55,6 +55,7 @@ def stats(update, context):
     sendMessage(stats, context.bot, update.message)
 
 def start(update, context):
+    buttons = ButtonMaker()
     buttons.buildbutton("Owner", "https://t.me/Mr_Spidy")
     buttons.buildbutton("channel", "https://t.me/Yourdemandzone")
     reply_markup = buttons.build_menu(2)
